@@ -13,10 +13,11 @@ install.packages('caret'); library('caret')
 ##Set working directory
 setwd('Desktop/CSforBA') 
 
-data <- fromJSON(file='data.json') ##Import json file 
-k1 <- length(data) ##1262 observations with nested duplicates 
+data <- fromJSON(file='data.json') #Import json file 
+k1 <- length(data) #1262 observations with nested duplicates 
+
 #The derivation of the unnested data is presented at the end of this document
-k2 <- length(new_data) ##1624 observations without nested duplicates 
+k2 <- length(new_data) #1624 observations without nested duplicates 
 
 ##PART 1 - SHINGLING 
 #This function creates a list of words out of a sentence 
